@@ -1,1 +1,121 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/fonts/yekan/yekanbakh.css";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  font-family: yekanbakh, serif;
+}
+
+/* استایل پایه */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  direction: rtl;
+  color: #333;
+  background-color: #FFC107;
+}
+
+p{
+  text-align: justify;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* هدر */
+.header {
+  background: linear-gradient(135deg, #0078d7, #005bb5);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  //max-width: 150px;
+}
+
+.header h1 {
+  margin: 10px 0;
+}
+
+/* معرفی */
+.introduction, .innovation, .goal, .clients , .contact-us {
+  background: white;
+  padding: 40px 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.introduction img, .product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* محصولات */
+.products {
+  //background: lightyellow;
+  padding: 30px 0;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+//.product-card:hover {
+//  transform: translateY(-10px);
+//}
+
+/* فوتر */
+.footer {
+  background: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* واکنش‌گرایی */
+@media (max-width: 768px) {
+  .product-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .introduction img {
+    width: 50% !important;
+  }
+
+  .clients img {
+    width: 20% !important;
+  }
+
+  .contact-us img {
+    width: 5% !important;
+  }
+
+  .innovation img , .goal img{
+    width: 50% !important;
+  }
+
+}
