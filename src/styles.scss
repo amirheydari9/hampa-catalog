@@ -1,8 +1,8 @@
-@import "assets/fonts/yekan/yekanbakh.css";
+@import "assets/fonts/peyda/peyda.css";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 * {
-  font-family: yekanbakh, serif;
+  font-family: peyda, serif;
 }
 
 /* استایل پایه */
@@ -100,6 +100,9 @@ p{
 @media (max-width: 768px) {
   .product-cards {
     grid-template-columns: 1fr;
+    img{
+      width: 50% !important;
+    }
   }
 
   .introduction img {
